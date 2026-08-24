@@ -1,0 +1,5 @@
+temp_scratch/
+*.docx
+*.log
+.DS_Store
+Thumbs.db
