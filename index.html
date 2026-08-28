@@ -33,8 +33,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="css/styles.css?v=1.9" />
+  <link rel="stylesheet" href="css/styles.css?v=2.0" />
 
   <!-- Restaurant structured data -->
   <script type="application/ld+json">
@@ -95,17 +96,17 @@
           <path d="M4 27c4-4 8-4 12 0s8 4 12 0 8-4 12 0" class="logo-wave"/>
           <path d="M4 34c4-4 8-4 12 0s8 4 12 0 8-4 12 0" class="logo-wave logo-wave--soft"/>
         </svg>
-        <span class="nav__name">Pazuri<span class="nav__name-sub">Beach Restaurant</span></span>
+        <span class="nav__name">Pazuri<span class="nav__name-sub" data-i18n="nav.brandSub">Beach Restaurant</span></span>
       </a>
 
       <nav class="nav__links" id="nav-links" aria-label="Main navigation">
-        <a href="#about">About</a>
-        <a href="#menu">Menu</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#reviews">Reviews</a>
-        <a href="#location">Location</a>
-        <a href="#contact">Contact</a>
-        <a href="#" class="btn btn--primary btn--nav js-reserve">Reserve a Table</a>
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#menu" data-i18n="nav.menu">Menu</a>
+        <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
+        <a href="#reviews" data-i18n="nav.reviews">Reviews</a>
+        <a href="#location" data-i18n="nav.location">Location</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+        <a href="#" class="btn btn--primary btn--nav js-reserve" data-i18n="nav.reserve">Reserve a Table</a>
       </nav>
 
       <button class="nav__burger" id="nav-burger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
@@ -131,17 +132,17 @@
       </div>
 
       <div class="hero__content">
-        <p class="eyebrow eyebrow--light"><span>Karibu</span> · Bamburi Beach, Mombasa</p>
-        <h1 class="hero__title">Fresh seafood.<br/>Authentic Kenyan flavours.<br/><em>Beachside moments.</em></h1>
-        <p class="hero__text">Experience the taste of the Kenyan coast — ocean-fresh seafood, traditional Swahili dishes and charcoal grill favourites, served with the breeze at Bamburi Beach.</p>
+        <p class="eyebrow eyebrow--light"><span>Karibu</span> · <span data-i18n="hero.eyebrowSub">Bamburi Beach, Mombasa</span></p>
+        <h1 class="hero__title" data-i18n-html="hero.title">Fresh seafood.<br/>Authentic Kenyan flavours.<br/><em>Beachside moments.</em></h1>
+        <p class="hero__text" data-i18n="hero.text">Experience the taste of the Kenyan coast — ocean-fresh seafood, traditional Swahili dishes and charcoal grill favourites, served with the breeze at Bamburi Beach.</p>
         <div class="hero__actions">
-          <a href="#" class="btn btn--primary btn--pulse js-reserve">Reserve Your Table</a>
-          <a href="#menu" class="btn btn--ghost">Explore Our Menu</a>
+          <a href="#" class="btn btn--primary btn--pulse js-reserve" data-i18n="hero.reserve">Reserve Your Table</a>
+          <a href="#menu" class="btn btn--ghost" data-i18n="hero.explore">Explore Our Menu</a>
         </div>
         <ul class="hero__facts" aria-label="Quick facts">
-          <li>Open daily · 9 AM – 11 PM</li>
-          <li>Fresh catch every morning</li>
-          <li>Loved by locals & travellers</li>
+          <li data-i18n="hero.fact1">Open daily · 9 AM – 11 PM</li>
+          <li data-i18n="hero.fact2">Fresh catch every morning</li>
+          <li data-i18n="hero.fact3">Loved by locals & travellers</li>
         </ul>
       </div>
     </section>
@@ -150,11 +151,11 @@
     <section class="section section--sand" id="about">
       <div class="container split">
         <div class="split__text reveal">
-          <p class="eyebrow"><span>Karibu Pazuri</span> · Our Story</p>
-          <h2>Where the ocean meets the table</h2>
-          <p>Pazuri Beach Restaurant is a coastal dining experience built around great food, fresh ingredients and genuine Kenyan hospitality. Located near Bamburi Beach in Mombasa, we bring together the best flavours of the ocean and the traditions of the Kenyan coast.</p>
-          <p>From freshly prepared seafood and Swahili favourites to charcoal-grilled specialties, every dish is made to deliver generous portions, authentic taste and unforgettable moments — whether it's your first visit to Kenya or your hundredth day at this beach.</p>
-          <p class="split__quote">"Great food doesn't need to be complicated. It needs to be fresh, honest and prepared with care."</p>
+          <p class="eyebrow"><span>Karibu Pazuri</span> · <span data-i18n="about.eyebrowSub">Our Story</span></p>
+          <h2 data-i18n="about.heading">Where the ocean meets the table</h2>
+          <p data-i18n="about.p1">Pazuri Beach Restaurant is a coastal dining experience built around great food, fresh ingredients and genuine Kenyan hospitality. Located near Bamburi Beach in Mombasa, we bring together the best flavours of the ocean and the traditions of the Kenyan coast.</p>
+          <p data-i18n="about.p2">From freshly prepared seafood and Swahili favourites to charcoal-grilled specialties, every dish is made to deliver generous portions, authentic taste and unforgettable moments — whether it's your first visit to Kenya or your hundredth day at this beach.</p>
+          <p class="split__quote" data-i18n="about.quote">"Great food doesn't need to be complicated. It needs to be fresh, honest and prepared with care."</p>
         </div>
         <div class="split__media reveal">
           <img class="photo photo--tall" src="images/ocean-meets-table.jpg" alt="Camel caravan walking along the white sand where the ocean meets Bamburi Beach" loading="lazy" style="object-position: 80% center;" />
@@ -167,15 +168,15 @@
     <section class="section" id="why">
       <div class="container">
         <div class="section__head reveal">
-          <p class="eyebrow"><span>Kwa Nini Pazuri?</span> · Why Choose Us</p>
-          <h2>More than just a restaurant</h2>
+          <p class="eyebrow"><span>Kwa Nini Pazuri?</span> · <span data-i18n="why.eyebrowSub">Why Choose Us</span></p>
+          <h2 data-i18n="why.heading">More than just a restaurant</h2>
         </div>
         <div class="why-grid">
-          <article class="why-card reveal"><div class="why-card__icon">🦞</div><h3>Fresh Seafood Daily</h3><p>Ocean-fresh ingredients prepared with care and coastal inspiration.</p></article>
-          <article class="why-card reveal"><div class="why-card__icon">🥥</div><h3>Authentic Swahili Cuisine</h3><p>Traditional coastal dishes made with local flavours and recipes.</p></article>
-          <article class="why-card reveal"><div class="why-card__icon">🌊</div><h3>Beachside Atmosphere</h3><p>Delicious food surrounded by the beauty and calm of the coast.</p></article>
-          <article class="why-card reveal"><div class="why-card__icon">🤝</div><h3>Great Value</h3><p>Quality meals, generous portions and prices that welcome everyone.</p></article>
-          <article class="why-card reveal"><div class="why-card__icon">🌍</div><h3>Locals & Visitors Welcome</h3><p>A favourite of Kenyan guests and travellers from around the world.</p></article>
+          <article class="why-card reveal"><div class="why-card__icon">🦞</div><h3 data-i18n="why.card1.title">Fresh Seafood Daily</h3><p data-i18n="why.card1.text">Ocean-fresh ingredients prepared with care and coastal inspiration.</p></article>
+          <article class="why-card reveal"><div class="why-card__icon">🥥</div><h3 data-i18n="why.card2.title">Authentic Swahili Cuisine</h3><p data-i18n="why.card2.text">Traditional coastal dishes made with local flavours and recipes.</p></article>
+          <article class="why-card reveal"><div class="why-card__icon">🌊</div><h3 data-i18n="why.card3.title">Beachside Atmosphere</h3><p data-i18n="why.card3.text">Delicious food surrounded by the beauty and calm of the coast.</p></article>
+          <article class="why-card reveal"><div class="why-card__icon">🤝</div><h3 data-i18n="why.card4.title">Great Value</h3><p data-i18n="why.card4.text">Quality meals, generous portions and prices that welcome everyone.</p></article>
+          <article class="why-card reveal"><div class="why-card__icon">🌍</div><h3 data-i18n="why.card5.title">Locals & Visitors Welcome</h3><p data-i18n="why.card5.text">A favourite of Kenyan guests and travellers from around the world.</p></article>
         </div>
       </div>
     </section>
@@ -184,8 +185,8 @@
     <section class="section section--deep" id="featured">
       <div class="container">
         <div class="section__head section__head--light reveal">
-          <p class="eyebrow eyebrow--light"><span>Chakula Chetu</span> · Chef Recommendations</p>
-          <h2>What the coast is famous for</h2>
+          <p class="eyebrow eyebrow--light"><span>Chakula Chetu</span> · <span data-i18n="featured.eyebrowSub">Chef Recommendations</span></p>
+          <h2 data-i18n="featured.heading">What the coast is famous for</h2>
         </div>
         <div class="featured-grid" id="featured-grid"><!-- populated by JS --></div>
       </div>
@@ -195,15 +196,15 @@
     <section class="section section--sand" id="menu">
       <div class="container">
         <div class="section__head reveal">
-          <p class="eyebrow"><span>Menyu Kamili</span> · The Full Menu</p>
-          <h2>Choose your dishes, order on WhatsApp</h2>
-          <p class="section__sub">Tap <strong>+ Add</strong> on anything you like — we'll prepare your WhatsApp order automatically. Prices in KES with an approximate USD guide.</p>
+          <p class="eyebrow"><span>Menyu Kamili</span> · <span data-i18n="menu.eyebrowSub">The Full Menu</span></p>
+          <h2 data-i18n="menu.heading">Choose your dishes, order on WhatsApp</h2>
+          <p class="section__sub" data-i18n-html="menu.sub">Tap <strong>+ Add</strong> on anything you like — we'll prepare your WhatsApp order automatically. Prices in KES with an approximate USD guide.</p>
         </div>
 
         <div class="menu-search">
-          <input type="search" id="menu-search" placeholder="Search the menu…" aria-label="Search the menu" />
+          <input type="search" id="menu-search" placeholder="Search the menu…" data-i18n-placeholder="menu.searchPlaceholder" aria-label="Search the menu" data-i18n-aria="menu.searchLabel" />
         </div>
-        <div class="menu-tabs" id="menu-tabs" role="tablist" aria-label="Menu categories"><!-- populated by JS --></div>
+        <div class="menu-tabs" id="menu-tabs" role="tablist" aria-label="Menu categories" data-i18n-aria="menu.tabsLabel"><!-- populated by JS --></div>
         <div id="menu-note"><!-- populated by JS --></div>
         <div class="menu-grid" id="menu-grid"><!-- populated by JS --></div>
       </div>
@@ -213,9 +214,9 @@
     <section class="section" id="gallery">
       <div class="container">
         <div class="section__head reveal">
-          <p class="eyebrow"><span>Picha Zetu</span> · Gallery</p>
-          <h2>A taste of the atmosphere</h2>
-          <p class="section__sub">A glimpse of life at Pazuri — food, fire, and golden-hour views by the water.</p>
+          <p class="eyebrow"><span>Picha Zetu</span> · <span data-i18n="gallery.eyebrowSub">Gallery</span></p>
+          <h2 data-i18n="gallery.heading">A taste of the atmosphere</h2>
+          <p class="section__sub" data-i18n="gallery.sub">A glimpse of life at Pazuri — food, fire, and golden-hour views by the water.</p>
         </div>
         <div class="gallery reveal">
           <img class="photo gallery__item" src="images/gallery/seafood-platter-ready-to-share.jpg" alt="Seafood platter, ready to share" loading="lazy">
@@ -232,35 +233,35 @@
     <section class="section section--sand" id="reviews">
       <div class="container">
         <div class="section__head reveal">
-          <p class="eyebrow"><span>Wageni Wetu</span> · Reviews</p>
-          <h2>Trusted by real people</h2>
+          <p class="eyebrow"><span>Wageni Wetu</span> · <span data-i18n="reviews.eyebrowSub">Reviews</span></p>
+          <h2 data-i18n="reviews.heading">Trusted by real people</h2>
           <div class="rating-summary">
             <span class="rating-summary__stars" aria-label="Rated 4.8 out of 5">★★★★★</span>
-            <span class="rating-summary__text"><strong>4.8</strong> — "Excellent food and beach atmosphere"</span>
+            <span class="rating-summary__text"><strong>4.8</strong> — "<span data-i18n="reviews.summary">Excellent food and beach atmosphere</span>"</span>
           </div>
         </div>
 
         <div class="reviews-grid">
           <article class="review reveal">
             <p class="review__stars" aria-label="5 stars">★★★★★</p>
-            <p>"The seafood platter was unbelievable — everything fresh, portions huge, and we ate with our feet basically in the sand. Best meal of our Kenya trip."</p>
-            <footer><strong>Sarah M.</strong> · United Kingdom</footer>
+            <p data-i18n="reviews.review1">"The seafood platter was unbelievable — everything fresh, portions huge, and we ate with our feet basically in the sand. Best meal of our Kenya trip."</p>
+            <footer><strong>Sarah M.</strong> · <span data-i18n="reviews.country1">United Kingdom</span></footer>
           </article>
           <article class="review reveal">
             <p class="review__stars" aria-label="5 stars">★★★★★</p>
-            <p>"Biriani kama ya nyumbani! Fair prices, big portions and the staff treat you like family. We come every time we're in Mombasa."</p>
-            <footer><strong>Kevin O.</strong> · Nairobi, Kenya</footer>
+            <p data-i18n="reviews.review2">"Biriani kama ya nyumbani! Fair prices, big portions and the staff treat you like family. We come every time we're in Mombasa."</p>
+            <footer><strong>Kevin O.</strong> · <span data-i18n="reviews.country2">Nairobi, Kenya</span></footer>
           </article>
           <article class="review reveal">
             <p class="review__stars" aria-label="4.5 stars">★★★★½</p>
-            <p>"Booked on WhatsApp in two minutes, table was ready by the water at sunset. The grilled lobster and dawa cocktail — perfect evening."</p>
-            <footer><strong>Anke & Jonas</strong> · Germany</footer>
+            <p data-i18n="reviews.review3">"Booked on WhatsApp in two minutes, table was ready by the water at sunset. The grilled lobster and dawa cocktail — perfect evening."</p>
+            <footer><strong>Anke & Jonas</strong> · <span data-i18n="reviews.country3">Germany</span></footer>
           </article>
         </div>
 
         <div class="reviews-actions reveal">
-          <a class="btn btn--primary" href="https://www.google.com/maps/place/Pazuri/@-3.988424,39.7386992,17z/data=!3m1!4b1!4m6!3m5!1s0x18400f007b8e2fb3:0x20c16fc9d5186a3f!8m2!3d-3.988424!4d39.7386992!16s%2Fg%2F11y0f6156v" target="_blank" rel="noopener">Leave a Review</a>
-          <a class="btn btn--ghost btn--ghost-dark" href="https://www.google.com/maps/place/Pazuri/@-3.988424,39.7386992,17z/data=!3m1!4b1!4m6!3m5!1s0x18400f007b8e2fb3:0x20c16fc9d5186a3f!8m2!3d-3.988424!4d39.7386992!16s%2Fg%2F11y0f6156v" target="_blank" rel="noopener">Read More Reviews</a>
+          <a class="btn btn--primary" href="https://www.google.com/maps/place/Pazuri/@-3.988424,39.7386992,17z/data=!3m1!4b1!4m6!3m5!1s0x18400f007b8e2fb3:0x20c16fc9d5186a3f!8m2!3d-3.988424!4d39.7386992!16s%2Fg%2F11y0f6156v" target="_blank" rel="noopener" data-i18n="reviews.leaveReview">Leave a Review</a>
+          <a class="btn btn--ghost btn--ghost-dark" href="https://www.google.com/maps/place/Pazuri/@-3.988424,39.7386992,17z/data=!3m1!4b1!4m6!3m5!1s0x18400f007b8e2fb3:0x20c16fc9d5186a3f!8m2!3d-3.988424!4d39.7386992!16s%2Fg%2F11y0f6156v" target="_blank" rel="noopener" data-i18n="reviews.readMore">Read More Reviews</a>
         </div>
       </div>
     </section>
@@ -269,20 +270,21 @@
     <section class="section" id="location">
       <div class="container split split--location">
         <div class="split__text reveal">
-          <p class="eyebrow"><span>Mahali Petu</span> · Find Us</p>
-          <h2>On the sand at Bamburi Beach</h2>
-          <p>Located near Bamburi Beach on Mombasa's north coast, Pazuri offers a relaxed dining experience where fresh seafood meets the flavours of Kenya. A short ride from the Bamburi hotels — ask for us by name.</p>
+          <p class="eyebrow"><span>Mahali Petu</span> · <span data-i18n="location.eyebrowSub">Find Us</span></p>
+          <h2 data-i18n="location.heading">On the sand at Bamburi Beach</h2>
+          <p data-i18n="location.p1">Located near Bamburi Beach on Mombasa's north coast, Pazuri offers a relaxed dining experience where fresh seafood meets the flavours of Kenya. A short ride from the Bamburi hotels — ask for us by name.</p>
           <ul class="location-list">
-            <li><strong>Address</strong> Bamburi Beach, Mombasa, Kenya</li>
-            <li><strong>Landmarks</strong> Near the Bamburi public beach access</li>
-            <li><strong>Hours</strong> Daily, 9:00 AM – 11:00 PM</li>
+            <li><strong data-i18n="location.addressLabel">Address</strong> <span data-i18n="location.addressValue">Bamburi Beach, Mombasa, Kenya</span></li>
+            <li><strong data-i18n="location.landmarksLabel">Landmarks</strong> <span data-i18n="location.landmarksValue">Near the Bamburi public beach access</span></li>
+            <li><strong data-i18n="location.hoursLabel">Hours</strong> <span data-i18n="location.hoursValue">Daily, 9:00 AM – 11:00 PM</span></li>
           </ul>
-          <a class="btn btn--primary" href="https://www.google.com/maps/dir/?api=1&destination=-3.988424,39.7386992" target="_blank" rel="noopener">Get Directions</a>
+          <a class="btn btn--primary" href="https://www.google.com/maps/dir/?api=1&destination=-3.988424,39.7386992" target="_blank" rel="noopener" data-i18n="location.directions">Get Directions</a>
         </div>
         <div class="split__media reveal">
           <iframe
             class="map"
             title="Map showing Pazuri Beach Restaurant near Bamburi Beach, Mombasa"
+            data-i18n-title="location.mapTitle"
             src="https://www.google.com/maps?q=-3.988424,39.7386992&z=17&output=embed"
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
@@ -297,17 +299,17 @@
         <path d="M0,50 C240,90 480,10 720,45 C960,80 1200,15 1440,50 L1440,0 L0,0 Z"/>
       </svg>
       <div class="container cta__inner">
-        <p class="eyebrow eyebrow--light"><span>Tuonane</span> · See You Soon</p>
-        <h2>Ready to experience the taste of the Kenyan coast?</h2>
+        <p class="eyebrow eyebrow--light"><span>Tuonane</span> · <span data-i18n="contact.eyebrowSub">See You Soon</span></p>
+        <h2 data-i18n="contact.heading">Ready to experience the taste of the Kenyan coast?</h2>
         <div class="cta__actions">
-          <a href="#" class="btn btn--primary btn--big btn--pulse js-reserve">Reserve a Table</a>
-          <a href="#" class="btn btn--ghost btn--big js-order-blank">Order Food</a>
+          <a href="#" class="btn btn--primary btn--big btn--pulse js-reserve" data-i18n="contact.reserve">Reserve a Table</a>
+          <a href="#" class="btn btn--ghost btn--big js-order-blank" data-i18n="contact.orderFood">Order Food</a>
         </div>
         <div class="contact-grid">
-          <div><h3>Phone</h3><a href="tel:+254725437043">+254 725 437 043</a></div>
-          <div><h3>WhatsApp</h3><a href="#" class="js-reserve">Chat with us</a></div>
-          <div><h3>Email</h3><a href="mailto:pazurifood@gmail.com">pazurifood@gmail.com</a></div>
-          <div><h3>Hours</h3><p>Daily · 9:00 AM – 11:00 PM</p></div>
+          <div><h3 data-i18n="contact.phone">Phone</h3><a href="tel:+254725437043">+254 725 437 043</a></div>
+          <div><h3 data-i18n="contact.whatsapp">WhatsApp</h3><a href="#" class="js-reserve" data-i18n="contact.chat">Chat with us</a></div>
+          <div><h3 data-i18n="contact.email">Email</h3><a href="mailto:pazurifood@gmail.com">pazurifood@gmail.com</a></div>
+          <div><h3 data-i18n="contact.hours">Hours</h3><p data-i18n="contact.hoursValue">Daily · 9:00 AM – 11:00 PM</p></div>
         </div>
       </div>
     </section>
@@ -318,7 +320,7 @@
     <div class="container footer__inner">
       <div class="footer__brand">
         <p class="footer__name">Pazuri Beach Restaurant</p>
-        <p>Fresh seafood and authentic Kenyan coastal cuisine at Bamburi Beach, Mombasa.</p>
+        <p data-i18n="footer.tagline">Fresh seafood and authentic Kenyan coastal cuisine at Bamburi Beach, Mombasa.</p>
         <div class="footer__social" aria-label="Social media">
           <a href="#" aria-label="Instagram">Instagram</a>
           <a href="#" aria-label="Facebook">Facebook</a>
@@ -326,12 +328,12 @@
         </div>
       </div>
       <nav class="footer__links" aria-label="Footer navigation">
-        <a href="#about">About</a>
-        <a href="#menu">Menu</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#reviews">Reviews</a>
-        <a href="#location">Location</a>
-        <a href="#contact">Contact</a>
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#menu" data-i18n="nav.menu">Menu</a>
+        <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
+        <a href="#reviews" data-i18n="nav.reviews">Reviews</a>
+        <a href="#location" data-i18n="nav.location">Location</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
       </nav>
       <p class="footer__copy">© <span id="year"></span> Pazuri Beach Restaurant · Bamburi Beach, Mombasa</p>
     </div>
@@ -340,30 +342,36 @@
   <!-- ======================= ORDER BAR (appears when items are added) ======================= -->
   <div class="order-bar" id="order-bar" hidden>
     <div class="order-bar__inner">
-      <button class="order-bar__clear" id="order-clear" aria-label="Clear order">✕</button>
+      <button class="order-bar__clear" id="order-clear" aria-label="Clear order" data-i18n-aria="orderbar.clear">✕</button>
       <div class="order-bar__summary">
         <strong id="order-count">0 items</strong>
         <span id="order-total">KES 0</span>
       </div>
-      <button class="btn btn--primary" id="order-send">Order via WhatsApp</button>
+      <button class="btn btn--primary" id="order-send" data-i18n="orderbar.send">Order via WhatsApp</button>
     </div>
   </div>
 
   <!-- ======================= GALLERY LIGHTBOX ======================= -->
   <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden>
-    <button class="lightbox__close" id="lightbox-close" aria-label="Close">✕</button>
-    <button class="lightbox__nav lightbox__prev" id="lightbox-prev" aria-label="Previous photo">‹</button>
+    <button class="lightbox__close" id="lightbox-close" aria-label="Close" data-i18n-aria="lightbox.close">✕</button>
+    <button class="lightbox__nav lightbox__prev" id="lightbox-prev" aria-label="Previous photo" data-i18n-aria="lightbox.prev">‹</button>
     <img class="lightbox__img" id="lightbox-img" src="" alt="" />
-    <button class="lightbox__nav lightbox__next" id="lightbox-next" aria-label="Next photo">›</button>
+    <button class="lightbox__nav lightbox__next" id="lightbox-next" aria-label="Next photo" data-i18n-aria="lightbox.next">›</button>
   </div>
 
   <!-- ======================= FLOATING WHATSAPP ======================= -->
-  <a href="#" class="wa-float js-reserve" aria-label="Reserve via WhatsApp">
+  <a href="#" class="wa-float js-reserve" aria-label="Reserve via WhatsApp" data-i18n-aria="wa.reserveAria">
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.6.1a6.7 6.7 0 0 1-2-1.2 7.4 7.4 0 0 1-1.4-1.7c-.1-.3 0-.4.1-.5l.4-.5.3-.4a.5.5 0 0 0 0-.5c0-.1-.6-1.4-.8-1.9s-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 2.9 2.9 0 0 0-.9 2.1 5 5 0 0 0 1 2.7 11.4 11.4 0 0 0 4.4 3.9 14.6 14.6 0 0 0 1.5.5 3.6 3.6 0 0 0 1.6.1 2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.2c0-.1-.2-.2-.5-.3Z"/></svg>
-    <span>Reserve</span>
+    <span data-i18n="wa.reserve">Reserve</span>
   </a>
 
-  <script src="js/menu-data.js?v=1.7" defer></script>
-  <script src="js/main.js?v=1.7" defer></script>
+  <!-- ======================= LANGUAGE TOGGLE ======================= -->
+  <button class="lang-toggle" id="lang-toggle" aria-label="Switch to Japanese">
+    <svg viewBox="0 0 24 24" aria-hidden="true" class="lang-toggle__icon"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm6.9 6h-3a15.6 15.6 0 0 0-1.3-4.1A8.03 8.03 0 0 1 18.9 8ZM12 4.1c.9 1.1 1.7 2.5 2.2 3.9H9.8c.5-1.4 1.3-2.8 2.2-3.9ZM4.3 14a8.1 8.1 0 0 1 0-4h3.4a16.6 16.6 0 0 0 0 4Zm.8 2h3a15.6 15.6 0 0 0 1.3 4.1A8.03 8.03 0 0 1 5.1 16Zm3-8h-3a8.03 8.03 0 0 1 4.3-4.1A15.6 15.6 0 0 0 8.1 8ZM12 19.9c-.9-1.1-1.7-2.5-2.2-3.9h4.4c-.5 1.4-1.3 2.8-2.2 3.9ZM14.7 14H9.3a14.3 14.3 0 0 1 0-4h5.4a14.3 14.3 0 0 1 0 4Zm.1 5.9c.6-1.3 1-2.7 1.3-4.1h3a8.03 8.03 0 0 1-4.3 4.1ZM16.3 14a16.6 16.6 0 0 0 0-4h3.4a8.1 8.1 0 0 1 0 4Z"/></svg>
+    <span id="lang-toggle-label">日本語</span>
+  </button>
+
+  <script src="js/menu-data.js?v=1.8" defer></script>
+  <script src="js/main.js?v=1.8" defer></script>
 </body>
 </html>

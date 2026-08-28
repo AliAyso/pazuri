@@ -20,8 +20,8 @@
   --ink-soft:    #5a6f74;
 
   /* Type */
-  --font-display: "Fraunces", Georgia, serif;
-  --font-body: "Manrope", -apple-system, "Segoe UI", sans-serif;
+  --font-display: "Fraunces", "Noto Sans JP", Georgia, serif;
+  --font-body: "Manrope", "Noto Sans JP", -apple-system, "Segoe UI", sans-serif;
 
   /* Rhythm */
   --radius: 18px;
@@ -966,6 +966,37 @@ body.lightbox-open { overflow: hidden; }
 
 body.has-order .wa-float { bottom: 5.4rem; }
 
+/* ---------------- Language toggle ---------------- */
+.lang-toggle {
+  position: fixed;
+  left: 1.1rem;
+  bottom: 1.1rem;
+  z-index: 55;
+  display: inline-flex;
+  align-items: center;
+  gap: .45rem;
+  background: var(--ocean-deep);
+  color: #fff;
+  border: none;
+  font-family: var(--font-body);
+  font-weight: 800;
+  font-size: .85rem;
+  cursor: pointer;
+  padding: .75rem 1.1rem;
+  border-radius: 999px;
+  box-shadow: 0 10px 24px rgba(12, 69, 82, .35);
+  transition: transform .18s ease, background .2s ease;
+}
+.lang-toggle:hover { transform: translateY(-3px); background: var(--ocean); }
+.lang-toggle__icon { width: 18px; height: 18px; fill: #fff; flex: 0 0 auto; }
+
+body.has-order .lang-toggle { bottom: 5.4rem; }
+
+@media (max-width: 760px) {
+  .lang-toggle span { display: none; }
+  .lang-toggle { padding: .85rem; }
+}
+
 /* ---------------- Reveal on scroll ---------------- */
 .reveal {
   opacity: 0;
@@ -981,7 +1012,7 @@ body.has-order .wa-float { bottom: 5.4rem; }
   .hero__sun-ripple { animation: none; display: none; }
   .btn--pulse { animation: none; }
   .btn, .btn::before, .why-card, .menu-card, .menu-card .photo, .featured-card, .featured-card .photo,
-  .gallery__item, .menu-tab, .add-btn, .wa-float { transition: none; }
+  .gallery__item, .menu-tab, .add-btn, .wa-float, .lang-toggle { transition: none; }
   .btn::before { display: none; }
 }
 
@@ -1024,6 +1055,10 @@ body.has-order .wa-float { bottom: 5.4rem; }
   .order-bar__inner .btn { flex: 1 1 100%; justify-content: center; }
   .wa-float span { display: none; }
   .wa-float { padding: .85rem; }
+  /* The order bar wraps to a taller two-row layout on mobile, so the
+     floating buttons need more clearance than the desktop offset gives. */
+  body.has-order .wa-float,
+  body.has-order .lang-toggle { bottom: 9.5rem; }
 
   /* Tighter section rhythm so pages read as less "one idea per screen" */
   .section { padding: 3rem 0; }
